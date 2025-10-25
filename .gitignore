@@ -1,0 +1,7 @@
+# Node artifact files
+node_modules/
+dist/
+
+# Large media files
+env/*
+.env

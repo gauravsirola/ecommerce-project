@@ -1,0 +1,10 @@
+1. Copy api json content to data.json
+2. Run import this json to mongodb using mongodb compass and call it "products_raw".
+3. Run the below command to flatten the json:
+    db.products_raw.aggregate([
+  { $unwind: "$products" },
+  { $replaceRoot: { newRoot: "$products" } },
+  { $out: "products" }
+])
+4. Delete products_raw collection.
+5. Repeat this for users/cart etc.
