@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/auth"; // your backend URL
+const API_URL = "https://e-shop-gt27.onrender.com/api/auth"; // your backend URL
 
 // Signup API
 export const signupUser = async (userData) => {

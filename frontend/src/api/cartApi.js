@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/cart";
+const API_URL = "https://e-shop-gt27.onrender.com/api/cart";
 
 // Fetch cart for current user
 export const getCart = async (userId) => {
