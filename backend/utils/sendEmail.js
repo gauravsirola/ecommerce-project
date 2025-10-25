@@ -9,7 +9,7 @@ const oAuth2Client = new google.auth.OAuth2(
 );
 oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-async function sendMail(to, subject, htmlContent) {
+export async function sendMail(to, subject, htmlContent) {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -39,4 +39,4 @@ async function sendMail(to, subject, htmlContent) {
   }
 }
 
-module.exports = sendMail;
+// module.exports = sendMail;
