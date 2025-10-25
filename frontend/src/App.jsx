@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header.jsx";
-import AppRoutes from "./routes/appRoutes.jsx";
+import AppRoutes from "./routes/AppRoutes.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
