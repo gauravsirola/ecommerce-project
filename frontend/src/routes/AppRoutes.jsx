@@ -17,7 +17,7 @@ const AppRoutes = () => {
       <Route path="/categories/:categoryId" element={<CategoryProductsPage />} />
       <Route path="/product/:productId" element={<ProductDetailPage />} />
       <Route path="/cart" element={<CartPage />} />
-      <Route path="*" element={<CategoriesPage />} /> fallback
+      <Route path="/" element={<CategoriesPage />} /> 
     </Routes>
         </>
   );
